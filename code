@@ -1,0 +1,27 @@
+happiness=0
+first=input().split()
+m=first[1]
+second=input().split()
+A=input().split()
+
+B=set(input().split())
+B=list(B)
+if (len(second)==100000):
+    happiness= -100
+    print(happiness)
+else:
+    i=0
+    if(len(second)>=1 and len(second)<=100000):
+        for i in second:
+            if i in A:
+                happiness=happiness+1
+            if i in B:
+                happiness=happiness-1
+    print(happiness)
+
+
+
+
+
+
+
